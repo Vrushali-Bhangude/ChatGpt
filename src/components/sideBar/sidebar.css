@@ -1,0 +1,31 @@
+.sidebar{
+    padding: 20px 10px;
+    height: 1000vh;
+    overflow: auto;
+    background-color: rgb(30, 33, 36);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+.sidebar svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.newchat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(99, 107, 107);
+    padding: 10px;
+    border-radius: 20px;
+}
+.recent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+}
