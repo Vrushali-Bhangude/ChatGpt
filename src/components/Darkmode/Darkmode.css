@@ -8,6 +8,9 @@
     transition: all 0.2s;
     cursor: pointer;
     box-shadow: 2px 2px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .darkmodebtn svg{
     width: 30px;

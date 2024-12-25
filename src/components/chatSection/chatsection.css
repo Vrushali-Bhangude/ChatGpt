@@ -3,3 +3,158 @@
     height: 100vh;
     flex: 1;
 }
+.topsection{
+    width: 100%;
+    height: 70vh;
+}
+.bottomsection{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 30vh;
+    display: flex;align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.bottomsection input{
+    width: 60%;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: var(--btn-background-color);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: var(--btn-color);
+    box-shadow: 2px 2px 2px black;
+
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vmax;
+}
+.heading  span:nth-child(1){
+    font-size: 3.5em;
+    font-weight: 600;
+    background: linear-gradient(to right,rgb(231, 67, 190),rgb(40, 193, 240),rgb(38, 226, 63) ,rgb(121, 120, 120));
+    background-clip: text;
+    color: transparent;
+}
+.heading  span:nth-child(2){
+    font-size: 2.9em;
+    font-weight: 600;
+    background: linear-gradient(to right,rgb(34, 230, 60),rgb(40, 193, 240),rgb(231, 67, 190) ,rgb(121, 120, 120));
+    background-clip: text;
+    color: transparent;
+}
+.heading  span:nth-child(3){
+    font-size: 1.3em;
+    color: var(--color);
+    opacity: 0.7;
+}
+.bottomsection #sendbtn{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--btn-background-color);
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+.bottomsection #sendbtn svg{
+    width: 30px;
+    height: 30px;
+    color: var(--btn-color);
+}
+.bottomsection #sendbtn:hover{
+    background-color: var(--hover-btn-background-color);
+}
+.userbox{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    color: var(--color);
+}
+.aibox{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    color: var(--color);
+}
+.aibox p{
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.result{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+.result img{
+    filter: drop-shadow(2px 2px 10px black);
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+    height: 20px;
+    border: none;
+    background: linear-gradient(to right,rgb(118, 229, 248),var(--background-color),rgb(118, 229, 248));
+    background-size: 800px 50px;
+    animation: loader 2s linear infinite;
+}
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .heading span {
+      font-size: 10px;
+    }
+    .heading span:nth-child(2){
+        margin-left: 10px;
+    }
+    .userbox p,
+    .aibox p {
+      font-size: 0.9rem;
+    }
+  
+    .bottomsection input {
+        height: 50px;
+        width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .bottomsection button {
+      /* width: 35px;
+      height: 35px; */
+      
+    }
+    .bottomsection svg {
+        width: 10px;
+        height: 10px;
+    }
+  }
+  
