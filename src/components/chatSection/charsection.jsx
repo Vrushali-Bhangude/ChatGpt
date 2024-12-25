@@ -1,9 +1,13 @@
 import React from 'react'
+import "./chatSection.css"
+import Darkmode from '../Darkmode/Darkmode'
 
-function charsection() {
+function chatsection() {
   return (
-    <div>charsection</div>
+    <div className="chatsection">
+    <Darkmode/>
+    </div>
   )
 }
 
-export default charsection
+export default chatsection

@@ -1,0 +1,5 @@
+.chatsection{
+    background-color:var(--background-color);
+    height: 100vh;
+    flex: 1;
+}

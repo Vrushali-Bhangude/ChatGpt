@@ -1,22 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPlus } from "react-icons/fa6";
 import { FaRegMessage } from "react-icons/fa6";
 import "./sideBar.css"
 
+
 function sidebar() {
+  const [extend,setExtend]= useState(false)
   return (
    <div className="sidebar">
-       <GiHamburgerMenu  id="ham"/>
+       <GiHamburgerMenu  
+         id="ham" 
+         onClick={()=>{
+          setExtend(prev=>!prev)
+          console.log(extend);
+          
+         }} 
+         
+        />
 
        <div className="newchat">
        <FaPlus />
-       <p>New Chat</p>
+       {extend?<p>New Chat</p>:null}
        </div>
 
        <div className="recent">
        <FaRegMessage />
-       <p>Who are you?</p>
+       {extend?<p>Who Are You</p>:null}
        </div>
    </div>
   )
