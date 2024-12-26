@@ -17,7 +17,7 @@
     gap: 10px;
 }
 .bottomsection input{
-    width: 60%;
+    width: 80%;
     height: 50px;
     padding: 20px;
     font-size: 20px;
@@ -133,28 +133,27 @@
     .heading span {
       font-size: 10px;
     }
-    .heading span:nth-child(2){
-        margin-left: 10px;
-    }
+   
     .userbox p,
     .aibox p {
       font-size: 0.9rem;
     }
   
     .bottomsection input {
-        height: 50px;
+        border: none;
+        height: 30px;
         width: 100%;
-      font-size: 0.9rem;
+        font-size: 0.9rem;   
     }
   
-    .bottomsection button {
-      /* width: 35px;
-      height: 35px; */
+    .bottomsection #sendbtn{
+      width: 40px;
+      height: 40px;
       
     }
-    .bottomsection svg {
-        width: 10px;
-        height: 10px;
+    .bottomsection #sendbtn svg {
+        width: 20px;
+        height: 20px;
     }
   }
   
